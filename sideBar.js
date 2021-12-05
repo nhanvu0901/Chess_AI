@@ -79,3 +79,18 @@ document.querySelector(".setting").addEventListener("click",()=>{
 function newGame() {
     window.location = "index.html";
   }
+
+
+
+
+let icon = document.getElementById("setting");
+function Animation(){
+   icon.classList.add("fa-spin");
+   icon.style.color = "#fcc603";
+   icon.style.fontSize = "100px";
+}
+function RemoveAnimation(){
+    icon.classList.remove("fa-spin");
+    icon.style.color = "white";
+    icon.style.fontSize = "50px";
+}
