@@ -2,7 +2,7 @@ function makeBestMove() {
   if (game.game_over()) {
     alert('Game over');
   }
-  const bestMove = minimaxRoot(game, 2, true);
+  const bestMove = minimaxRoot(game, 4, true); // depth of program 4
   game.move(bestMove);
   board.position(game.fen());
   if (game.game_over()) {
