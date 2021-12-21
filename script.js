@@ -13,13 +13,26 @@ const config = {
 const game = new Chess();
 const board = Chessboard('myBoard', config);
 $('#startBtn').on('click', board.start)
-$('#clearBtn').on('click', board.clear) // sua
+
+document.getElementById("startBtn").addEventListener('click', ()=>{
+  board.clear;
+  document.getElementById("startBtn").style.display= 'none';
+  document.getElementById("restartBtn").style.display= 'block'
+});
+document.getElementById("restartBtn").addEventListener('click', ()=>{
+   window.location = "index.html";
+   document.getElementById("restartBtn").style.display= 'block';
+});
+
+
+
+// $('#clearBtn').on('click', board.clear) // sua
 $('#flipOrientationBtn').on('click', board.flip)
 let undo = document.getElementById("undo");
 
 undo.addEventListener("click",()=>{
      takeback();
-  });
+});
 
 
   function takeback() { 

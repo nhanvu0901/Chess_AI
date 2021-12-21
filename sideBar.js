@@ -78,7 +78,7 @@ document.querySelector(".setting").addEventListener("click",()=>{
 })
 function newGame() {
     window.location = "index.html";
-  }
+}
 
 
 

@@ -1,5 +1,5 @@
 function makeBestMove() {
-  if (game.game_over()) {
+  if (game.game_over()) { //const game = new Chess(); (script.js)
     alert('Game over');
   }
   const bestMove = minimaxRoot(game, 4, true); // depth of program 4
@@ -50,7 +50,7 @@ function minimax(game, depth, alpha, beta, maximizingPlayer) {
   }
 }
 
-function minimaxRoot(game, depth, maximizingPlayer) {
+function minimaxRoot(game, depth, maximizingPlayer) { // tra ve best move found
   const moves = game.moves();
   let bestMove = -Infinity;
   let bestMoveFound = null;
@@ -64,7 +64,7 @@ function minimaxRoot(game, depth, maximizingPlayer) {
       bestMoveFound = move;
     }
   }
-
+  console.log(bestMoveFound);
   return bestMoveFound;
 }
 
