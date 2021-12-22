@@ -2,6 +2,9 @@
 var slideIndex =0;
 let dot = document.querySelectorAll(".dot");
 let slides = document.querySelectorAll(".mySlides");
+let setting = document.querySelector(".setting");
+const sideBar = document.getElementById("sidebar");
+
 showSlides(slideIndex);
 
 function showSlides(n){
@@ -60,10 +63,6 @@ document.getElementById("button").addEventListener('click',changeBoard);
         boardGame.style.border = `4px solid ${border_Color}`;
         }
 
-
-let setting = document.querySelector(".setting");
-let sideBar = document.getElementById("sidebar");
-
 document.getElementById("menu-btn").addEventListener("click", ()=>{
   
    sideBar.style.transform = "translateX(1000px)";
@@ -72,25 +71,22 @@ document.getElementById("menu-btn").addEventListener("click", ()=>{
 
 document.querySelector(".setting").addEventListener("click",()=>{
     
-    
     setting.style.display = "none";
     sideBar.style.transform = "translateX(0px)";
 })
+
 function newGame() {
     window.location = "index.html";
 }
-
-
-
 
 let icon = document.getElementById("setting");
 function Animation(){
    icon.classList.add("fa-spin");
    icon.style.color = "#fcc603";
-   icon.style.fontSize = "100px";
+   
 }
 function RemoveAnimation(){
     icon.classList.remove("fa-spin");
     icon.style.color = "white";
-    icon.style.fontSize = "50px";
+   
 }
