@@ -35,7 +35,9 @@
                    
 
             <div class="group">
-                <label class="label">Chỉnh lề ngoài của bảng game</label>
+                
+                <label class="label">Chỉnh lề ngoài của bảng game:</label>
+                
                 <select id="border-color" name="border">
                     <option value="cornsilk">Cornsilk</option>
                     <option value="#EF5D39">Orange</option>
@@ -44,8 +46,20 @@
                     <option value="#444">Grey</option>
                 </select>
             </div>
+            <div class="group">
+              
+                <label class="label">Chỉnh Deph của chương trình:</label>
+               
+                <select id="depth-select" >
+                    <option value="0" >Chọn depth</option>
+                    <option value="2"selected >2</option>
+                    <option value="3" >3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
 
-                 
+      
             
          
 
@@ -102,9 +116,8 @@
 
         <div class="contain_button">
             <div class="buttonAnimate"><a id="undo" class="button-animate">Đi lại nước</a></div>
-            <div class="buttonAnimate"><a id="clearBtn" class="button-animate">Xóa ván cờ</a></div>
             <div class="buttonAnimate"><a id="flipOrientationBtn" class="button-animate">Đổi hướng</a></div>
-            <div class="buttonAnimate"><a id="newGame" onclick="newGame()" class="button-animate">Game mới</a></div>
+            
         </div>
 
 
